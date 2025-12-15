@@ -1,0 +1,51 @@
+"app.title" = "QonaqStay";
+
+"tab.search" = "Іздеу";
+"tab.chats" = "Чаттар";
+"tab.profile" = "Профиль";
+
+"auth.mode" = "Режим";
+"auth.signIn" = "Кіру";
+"auth.register" = "Тіркелу";
+"auth.emailSection" = "Email";
+"auth.passwordSection" = "Құпиясөз";
+"auth.email" = "Email";
+"auth.password" = "Құпиясөз";
+"auth.phoneSoon" = "Телефонмен кіру (жақында)";
+
+"hosts.title" = "Хосттар";
+"hosts.search" = "Іздеу";
+"hosts.cityPlaceholder" = "Қала (мысалы: Шымкент)";
+"hosts.noName" = "Аты жоқ";
+"hosts.profileTitle" = "Хост профилі";
+"hosts.placeInfo" = "Тұру орны";
+"hosts.city" = "Қала";
+"hosts.placesCount" = "Орын саны";
+"hosts.rules" = "Ережелер";
+"hosts.writeMessage" = "Жазу";
+
+"chats.title" = "Чаттар";
+"chats.emptyTitle" = "Әзірге чат жоқ";
+"chats.emptySubtitle" = "Хост профиліне кіріп «Жазу» батырмасын бас.";
+"chats.noMessagesYet" = "Хабарлама жоқ";
+
+"chat.title" = "Чат";
+"chat.messagePlaceholder" = "Хабарлама…";
+"chat.send" = "Жіберу";
+
+"profile.title" = "Профиль";
+"profile.main" = "Мәліметтер";
+"profile.name" = "Аты";
+"profile.city" = "Қала";
+"profile.about" = "Өзі туралы";
+"profile.language" = "Тіл";
+"profile.roles" = "Рөлдер";
+"profile.roleGuest" = "Қонақ";
+"profile.roleHost" = "Хост";
+"profile.rating" = "Рейтинг";
+"profile.ratingValue" = "Баға";
+"profile.save" = "Сақтау";
+"profile.signOut" = "Шығу";
+
+
+

@@ -1,0 +1,51 @@
+"app.title" = "QonaqStay";
+
+"tab.search" = "Поиск";
+"tab.chats" = "Чаты";
+"tab.profile" = "Профиль";
+
+"auth.mode" = "Режим";
+"auth.signIn" = "Войти";
+"auth.register" = "Регистрация";
+"auth.emailSection" = "Email";
+"auth.passwordSection" = "Пароль";
+"auth.email" = "Email";
+"auth.password" = "Пароль";
+"auth.phoneSoon" = "Вход по телефону (скоро)";
+
+"hosts.title" = "Хосты";
+"hosts.search" = "Искать";
+"hosts.cityPlaceholder" = "Город (например: Шымкент)";
+"hosts.noName" = "Без имени";
+"hosts.profileTitle" = "Профиль хоста";
+"hosts.placeInfo" = "Жильё";
+"hosts.city" = "Город";
+"hosts.placesCount" = "Мест";
+"hosts.rules" = "Правила";
+"hosts.writeMessage" = "Написать";
+
+"chats.title" = "Чаты";
+"chats.emptyTitle" = "Пока нет чатов";
+"chats.emptySubtitle" = "Открой профиль хоста и нажми «Написать».";
+"chats.noMessagesYet" = "Нет сообщений";
+
+"chat.title" = "Чат";
+"chat.messagePlaceholder" = "Сообщение…";
+"chat.send" = "Отправить";
+
+"profile.title" = "Профиль";
+"profile.main" = "Данные";
+"profile.name" = "Имя";
+"profile.city" = "Город";
+"profile.about" = "О себе";
+"profile.language" = "Язык";
+"profile.roles" = "Роли";
+"profile.roleGuest" = "Гость";
+"profile.roleHost" = "Хост";
+"profile.rating" = "Рейтинг";
+"profile.ratingValue" = "Оценка";
+"profile.save" = "Сохранить";
+"profile.signOut" = "Выйти";
+
+
+
