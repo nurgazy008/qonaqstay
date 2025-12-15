@@ -6,6 +6,9 @@ struct HostPlace: Identifiable, Codable, Equatable {
     var city: String
     var placesCount: Int
     var rules: String
+    
+    // Фото жилья (URLs)
+    var photoURLs: [String] = []
 }
 
 

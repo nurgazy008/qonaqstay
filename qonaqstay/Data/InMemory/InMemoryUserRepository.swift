@@ -17,7 +17,13 @@ actor InMemoryUserRepository: UserRepository {
             language: .ru,
             isGuest: true,
             isHost: true,
-            rating: 4.8
+            rating: 4.8,
+            profileImageURL: nil,
+            isEmailVerified: true,
+            isPhoneVerified: true,
+            phoneNumber: "+77001234567",
+            email: "aibek@example.com",
+            gender: .male
         )
 
         let host2 = AppUser(
@@ -28,7 +34,13 @@ actor InMemoryUserRepository: UserRepository {
             language: .kz,
             isGuest: true,
             isHost: true,
-            rating: 4.6
+            rating: 4.6,
+            profileImageURL: nil,
+            isEmailVerified: true,
+            isPhoneVerified: false,
+            phoneNumber: "+77007654321",
+            email: "aliya@example.com",
+            gender: .female
         )
 
         let host3 = AppUser(
@@ -39,7 +51,13 @@ actor InMemoryUserRepository: UserRepository {
             language: .ru,
             isGuest: true,
             isHost: true,
-            rating: 4.9
+            rating: 4.9,
+            profileImageURL: nil,
+            isEmailVerified: false,
+            isPhoneVerified: true,
+            phoneNumber: "+77009876543",
+            email: "daniyar@example.com",
+            gender: .male
         )
 
         usersById[host1.id] = host1

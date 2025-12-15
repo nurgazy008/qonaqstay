@@ -35,6 +35,37 @@ actor InMemoryHostRepository: HostRepository {
             .filter { $0.city.lowercased() == city.lowercased() }
             .sorted { $0.placesCount > $1.placesCount }
     }
+    
+    func listHosts(filters: HostSearchFilters) async throws -> [HostPlace] {
+        await seedIfNeeded()
+        var all = Array(placesById.values)
+        
+        // Фильтр по городу
+        if let city = filters.city, !city.trimmingCharacters(in: .whitespacesAndNewlines).isEmpty {
+            all = all.filter { $0.city.lowercased() == city.lowercased() }
+        }
+        
+        // Фильтр по количеству мест
+        if let minPlaces = filters.minPlacesCount {
+            all = all.filter { $0.placesCount >= minPlaces }
+        }
+        if let maxPlaces = filters.maxPlacesCount {
+            all = all.filter { $0.placesCount <= maxPlaces }
+        }
+        
+        // Фильтр по правилам
+        if let hasRules = filters.hasRules {
+            if hasRules {
+                all = all.filter { !$0.rules.isEmpty }
+            } else {
+                all = all.filter { $0.rules.isEmpty }
+            }
+        }
+        
+        // Фильтр по рейтингу и полу требует загрузки пользователей
+        // Применяем их после получения пользователей
+        return all.sorted { $0.placesCount > $1.placesCount }
+    }
 
     func getHostPlace(id: String) async throws -> HostPlace {
         await seedIfNeeded()

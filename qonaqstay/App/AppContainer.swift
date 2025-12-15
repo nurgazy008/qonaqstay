@@ -9,17 +9,20 @@ final class AppContainer: ObservableObject {
     let userRepository: UserRepository
     let hostRepository: HostRepository
     let chatRepository: ChatRepository
+    let favoritesRepository: FavoritesRepository
 
     init(
         authRepository: AuthRepository,
         userRepository: UserRepository,
         hostRepository: HostRepository,
-        chatRepository: ChatRepository
+        chatRepository: ChatRepository,
+        favoritesRepository: FavoritesRepository
     ) {
         self.authRepository = authRepository
         self.userRepository = userRepository
         self.hostRepository = hostRepository
         self.chatRepository = chatRepository
+        self.favoritesRepository = favoritesRepository
     }
 
     nonisolated static func liveInMemory() -> AppContainer {
@@ -27,12 +30,14 @@ final class AppContainer: ObservableObject {
         let auth = InMemoryAuthRepository(userRepository: users)
         let hosts = InMemoryHostRepository(userRepository: users)
         let chat = InMemoryChatRepository(userRepository: users)
+        let favorites = InMemoryFavoritesRepository()
 
         return AppContainer(
             authRepository: auth,
             userRepository: users,
             hostRepository: hosts,
-            chatRepository: chat
+            chatRepository: chat,
+            favoritesRepository: favorites
         )
     }
 }
