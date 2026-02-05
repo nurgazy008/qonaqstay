@@ -20,15 +20,11 @@ Screenshots of the main flows are stored in the `screens/` folder at the root of
 - `screens/profile.png` – profile screen
 - `screens/signin.png` – sign-in screen
 
-You can preview them directly on GitHub or in your local file system.
+Rendered in this README:
 
-Example markdown preview:
-
-```markdown
-![Main](screens/main.png)
-![Profile](screens/profile.png)
-![Sign In](screens/signin.png)
-```
+![Main screen](screens/main.png)
+![Profile screen](screens/profile.png)
+![Sign In screen](screens/signin.png)
 
 ## Requirements
 
